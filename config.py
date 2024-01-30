@@ -1,0 +1,4 @@
+RPC = "https://binance.llamarpc.com"
+CONTRACT_ADDRESS = "0x26f5f3B28ecbbBFe64167Df7c7A3590F90C90Af9"
+MIN_DELAY_SEC = 0
+MAX_DELAY_SEC = 0
