@@ -43,6 +43,7 @@ def get_claimable_amount(_address, _proxy=None) -> int:
     if proxy:
         set_env_proxy(_proxy)
 
+    _address = w3.to_checksum_address(_address)
     claimable_amount_wei = contract.functions.claimableTokens(_address).call()
     _claimable_amount = w3.from_wei(claimable_amount_wei, "ether")
 
